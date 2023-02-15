@@ -17,7 +17,7 @@ table {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 section {
@@ -27,24 +27,20 @@ section {
   gap: 5rem;
 }
 
-.submit{
-      font-size: 3rem;
+.submit {
+  font-size: 3rem;
 }
 
-.input{
-    padding-top: 25px;
-    width: 100%;
-    box-sizing: border-box;
-    height: 2rem;
-    border: 2px solid;
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 2rem;
+  border: 2px solid;
 }
 
 input[type=submit] {
-    width: 45%;
-    box-sizing: border-box;
-    height: 2rem;
-    border: 2px solid;
-
+  width: 45%;
+  box-sizing: border-box;
+  height: 2rem;
+  border: 2px solid;
 }
-
-
