@@ -2,14 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 36px;
-  color: rgb(172, 183, 176);
-  text-shadow: -6px -2px 8px grey;
+  color: rgb(202, 218, 208);
+  text-shadow: -6px -2px 8px rgb(212, 191, 191);
 }
 
 body {
   width: 100%;
   height: 100vh;
-  background-image: radial-gradient(#020605d1, transparent), url("../img/img.jpg");
+  background-image: radial-gradient(#030303d1, transparent), url("../img/img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid;
@@ -19,7 +19,7 @@ h1 {
   text-align: center;
   margin: 65px;
   text-transform: uppercase;
-  text-shadow: 2px 4px #d817a8a3;
+  text-shadow: 2px 4px #dff609a3;
 }
 
 .container {
