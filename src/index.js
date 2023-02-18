@@ -1,20 +1,40 @@
-import _ from 'lodash';
-import './style.css';
-import Icon from './icon.png';
+import "./style.css";
+import getScore from "./modules/show.js";
+import print from "./modules/print.js";
 
-function component() {
-  const element = document.createElement('div');
+const createGame = () => {
+  const create = async () => {
+    const get = await fetch(
+      "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/",
+      {
+        method: "post",
+        body: JSON.stringify({ name: "uche" }),
+        headers: { "Content-type": "application/json" },
+      }
+    );
+    const res = await get.json();
+    return res;
+  };
+  create();
+};
+createGame();
+const gamer = () => {
+  const name = document.querySelector("#name");
+  const score = document.querySelector("#score");
+  const add = document.querySelector("#add");
+  const reload = document.querySelector("#reload");
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-  // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
+  add.addEventListener("submit", (e) => {
+    e.preventDefault();
+    getScore(name.value, score.value);
+    name.value = "";
+    score.value = "";
+  });
+  reload.addEventListener("click", () => {
+    // eslint-disable-next-line no-restricted-globals
+    location.reload();
+  });
+};
+gamer();
 
-  element.appendChild(myIcon);
-
-  return element;
-}
-
-document.body.appendChild(component());
+print();
