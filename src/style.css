@@ -2,14 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 36px;
-  color: rgb(84 122 96);
+  color: rgb(172, 183, 176);
   text-shadow: -6px -2px 8px grey;
 }
 
 body {
   width: 100%;
   height: 100vh;
-  background-image: radial-gradient(#020605d1, #bc3434d4, transparent), url("../img/img.jpg");
+  background-image: radial-gradient(#020605d1, transparent), url("../img/img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid;
@@ -45,7 +45,7 @@ h2 {
 }
 
 .scores {
-  border: 2px solid rgb(133, 5, 78);
+  border: 2px solid rgb(70, 184, 9);
   margin-top: 40px;
 }
 
